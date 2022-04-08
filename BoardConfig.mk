@@ -8,6 +8,7 @@
 -include device/xiaomi/sdm845-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/perseus
+BUILD_BROKEN_DUP_RULES := true
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := perseus

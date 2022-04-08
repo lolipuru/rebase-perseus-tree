@@ -6,11 +6,12 @@
 
 $(call inherit-product, device/xiaomi/perseus/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common dotOS stuff.
+$(call inherit-product, vendor/dot/config/common.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_perseus
+PRODUCT_NAME := dot_perseus
 PRODUCT_DEVICE := perseus
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi MIX 3
